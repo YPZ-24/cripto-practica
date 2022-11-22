@@ -32,9 +32,12 @@ function cifrar(cifrando){
     txtGuardado = txt
     let resultado, error, info
     try{
-        resultado = cifrando ? btoa(txt) : atob(txt)
-        navigator.clipboard.writeText(resultado)
-        info = "Copiado!"
+        if(!txt) info = "Escribe algo para comenzar!"
+        else{
+            resultado = cifrando ? btoa(txt) : atob(txt)
+            navigator.clipboard.writeText(resultado)
+            info = "Copiado!"
+        }
     }catch(e){
         console.log(e)
         error = "Ocurrio un Error, Intenta más tarde"

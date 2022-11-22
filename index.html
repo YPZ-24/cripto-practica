@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3f85d10f7b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/base64.css">
     <title>Cripto</title>
 </head>
 <body>
-    <h1>CRIPTO</h1>
+    <script defer src="./js/base64.js"></script>
+    <main>
+        <div id="conte">
+            <div id="conte-input">
+                <i id="icon-flash" class="fa-solid fa-chevron-right"></i>
+                <textarea type="text" id="inText" rows="5"></textarea>
+            </div>
+            <p id="pInfo"></p>
+            <p id="pError"></p>
+            <button class="btn" type="button" id="btnCifrar">CIFRAR</button>
+            <button class="btn" type="button" id="btnDescifrar">DESCIFRAR</button>
+        </div>
+        <div id="conte-resultado">
+            <p id="pResultado"></p>
+        </div>
+    </main>
 </body>
 </html>
