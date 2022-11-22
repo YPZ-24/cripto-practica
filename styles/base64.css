@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background-color: rgb(6, 12, 29);
+}
+
+main{
+    padding: 30px;
+    font-size: 1.3rem;
+}
+
+/*  FORM */
+
+#conte{
+    gap: 10px;
+    min-height: 20vh;
+    max-width: 600px;
+    transition: all 1.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 3rem;
+}
+
+#conte:focus-within {
+    min-height: 70vh;
+}
+
+#conte-input{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#conte-input i{
+    color: rgb(58,180,59);
+    font-weight: bolder;
+}
+
+#inText{
+    border-radius: 3px;
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    flex-grow: 1;
+    background-color: transparent;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#inText:focus{
+    outline: none; 
+    border: 2px solid white;
+}
+
+#inText:focus::placeholder{
+    color: white;
+}
+
+.btn{
+    background: linear-gradient(90deg, rgba(58,180,59,0.8) 0%, rgba(29,171,253,0.8) 100%);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.btn:hover{
+    background: linear-gradient(90deg, rgba(58,180,59,1) 0%, rgba(29,171,253,1) 100%);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#pError{
+    font-size: 1.1rem;
+    color: rgb(255, 111, 111);
+    margin-bottom: 20px;
+}
+
+#pInfo{
+    font-size: 1.1rem;
+    color: rgb(195, 195, 195);
+}
+
+/* RESULTADO */
+
+#conte-resultado{
+    padding-top: 30px;
+}
+
+#conte-resultado #pResultado{
+    text-align: center;
+    color: white;
+}
